@@ -1,0 +1,21 @@
+:root
+{
+  --black: #16161a;
+  --violet: #7f5af0;
+  --white: #fffffe;
+  --gray: #94a1b2;
+  --green:#2cb67d;
+}
+
+* 
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+html
+{
+  font-size: 62.5%;
+}
