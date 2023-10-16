@@ -24,10 +24,10 @@ export const Canvas = () => {
     const createParticle = () => ({
       x: getRandomNumber(0, canvas.width),
       y: getRandomNumber(0, canvas.height),
-      radius: getRandomNumber(0.5, 3),
+      radius: getRandomNumber(0.5, 10),
       color: '#2cb67d',
-      speedX: getRandomNumber(-0.1, 0),
-      speedY: getRandomNumber(-0.1, 0),
+      speedX: getRandomNumber(-2, 2),
+      speedY: getRandomNumber(-2, 2),
     });
 
     // Función para actualizar la posición de las partículas
@@ -63,7 +63,7 @@ export const Canvas = () => {
     };
 
     // Inicialización: Crear 100 partículas
-    for (let i = 0; i < 400; i++) {
+    for (let i = 0; i < 1000; i++) {
       particles.push(createParticle());
     }
 

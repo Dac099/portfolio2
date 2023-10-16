@@ -2,4 +2,8 @@
 {
   width: calc(100vw - 10px);
   height: calc(100vh - 10px);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
 }
