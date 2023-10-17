@@ -1,0 +1,103 @@
+.card
+{
+  border: 2px solid var(--gray);
+  border-radius: 8px;
+  padding: 5px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 70% 20%;
+  gap: 10px;
+  min-width: 260px;
+  width: 400px;
+  height: 190px;
+  box-shadow: 2px 4px 0px 0px var(--gray);
+}
+
+.image
+{
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  object-fit: scale-down;
+}
+
+.info
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.project_title
+{
+  text-align: center;
+  font-weight: bold;
+  color: var(--black);
+  font-size: 1.8rem;
+}
+
+.projects_description
+{
+  font-size: 1.5rem;
+  text-align: center;
+  font-style: italic;
+  margin-top: 10px;
+}
+
+.btns
+{
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  align-items: center;
+  grid-column: 1/3;
+}
+
+.btn
+{
+  height: 100%;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: var(--violet);
+  text-decoration: none;
+  font-size: 1.4rem;
+  color: var(--white);
+  font-weight: bold;
+  display: grid;
+  place-content: center;
+  border: 1px solid var(--black);
+}
+
+.btns a:hover
+{
+  background-color: var(--green);
+}
+
+.unavailable
+{
+  height: 100%;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: var(--gray);
+  text-decoration: none;
+  font-size: 1.4rem;
+  color: var(--white);
+  font-weight: bold;
+  display: grid;
+  place-content: center;
+  border: 1px solid var(--black);
+  color: var(--black);
+  cursor: default;
+}
+
+.btns .unavailable:hover
+{
+  background-color: var(--gray);
+}
+
+@media screen and (max-width: 460px){
+  .card
+  {
+    height: 250px;
+  }
+}
