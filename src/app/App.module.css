@@ -28,6 +28,7 @@
   flex-wrap: wrap;
   width: 90%;
   height: 90%;
+  max-height: 700px;
   opacity: 1;
 }
 
