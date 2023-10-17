@@ -28,7 +28,8 @@
   flex-wrap: wrap;
   width: 90%;
   height: 90%;
-  max-height: 700px;
+  max-height: 650px;
+  max-width: 920px;
   opacity: 1;
 }
 
