@@ -5,7 +5,7 @@ import { Proyects } from '../components/proyects/proyects';
 import { Stack } from '../components/stack/stack';
 import { Contact } from '../components/contact/contact';
 
-function App() {
+export function App() {
 
   return (
     <>
@@ -24,4 +24,3 @@ function App() {
   )
 }
 
-export {App};
