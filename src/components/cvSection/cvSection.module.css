@@ -1,0 +1,36 @@
+.cv__container
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.cv_text
+{
+  font-size: 1.8rem;
+}
+
+.cv_image
+{
+  display: block;
+  background-image: url('/public/cv.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 128px;
+  aspect-ratio: 1/1;
+} 
+
+.cv_tip
+{
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+@media screen and (max-width: 375px){
+  .cv__container
+  {
+    justify-content: center;
+    gap: 20px;
+  }
+}

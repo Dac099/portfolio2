@@ -1,0 +1,17 @@
+.frame
+{
+  background-color: var(--white);
+  max-width: 1000px;
+  width: 90%;
+  margin: 20px auto;
+  padding: 5px;
+  border-radius: 15px;
+  box-shadow: 5px 5px 0px 0px var(--violet);
+}
+
+@media screen and (max-width: 700px){
+  .frame
+  {
+    box-shadow: 2px 2px 0px 2px var(--violet);
+  }
+}
