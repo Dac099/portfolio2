@@ -10,7 +10,7 @@ export function Label({image, text, link}){
         href={link || "#"}
         className={styles.label__image}
         style={{
-          backgroundImage: `url(/public/${image})`
+          backgroundImage: `url(${image})`
         }}
       ></a>
     </article>
