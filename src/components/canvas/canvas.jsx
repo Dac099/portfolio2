@@ -1,18 +1,20 @@
-import { useRef, useEffect } from 'react';
+import { useRef, useEffect, useState } from 'react';
 import styles from './canvas.module.css';
 
 export const Canvas = () => {
   const canvasRef = useRef(null);
   const particles = [];
+  const [root, setRoot] = useState(document.getElementById('root'));
 
   useEffect(() => {
     const canvas = canvasRef.current;
     const ctx = canvas.getContext('2d');
+    setRoot(document.getElementById('root'));
 
     // Configurar la densidad de píxeles del canvas para pantallas de alta resolución
     const dpi = window.devicePixelRatio || 1;
     canvas.width = canvas.clientWidth * dpi;
-    canvas.height = canvas.clientHeight * dpi;
+    canvas.height = root.clientHeight * dpi;
     ctx.scale(dpi, dpi);
 
     let animationFrameId;
@@ -25,7 +27,7 @@ export const Canvas = () => {
       x: getRandomNumber(0, canvas.width),
       y: getRandomNumber(0, canvas.height),
       radius: getRandomNumber(0.5, 10),
-      color: '#2cb67d',
+      color: '#7f5af0',
       speedX: getRandomNumber(-2, 2),
       speedY: getRandomNumber(-2, 2),
     });

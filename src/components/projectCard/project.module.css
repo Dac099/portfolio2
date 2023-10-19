@@ -1,0 +1,77 @@
+.project
+{
+  border-radius: 10px;
+  background-color: var(--black);
+  color: var(--white);
+  max-width: 400px;
+  min-width: 278px;
+  box-shadow: 2px 2px 0px 1px var(--green);
+}
+
+.project__title
+{
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: var(--green);
+  text-align: center;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+  height: 25px;
+  padding-top: 5px;
+}
+
+.project__main
+{
+  display: grid;
+  grid-template-rows: 1fr 100px 40px;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+
+.project__image
+{
+  width: 100%;
+}
+
+.project__description
+{
+  font-size: 1.4rem;
+  padding: 5px;
+}
+
+.buttons
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10px;
+}
+
+.btn
+{
+  font-size: 1.3rem;
+  background-color: var(--green);
+  color: var(--white);
+  padding: 5px;
+  width: 100px;
+  height: 30px;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.unavailable_btn
+{
+  font-size: 1.3rem;
+  background-color: var(--gray);
+  color: var(--black);
+  padding: 5px;
+  width: 100px;
+  height: 30px;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: default;
+}

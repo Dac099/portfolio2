@@ -1,7 +1,6 @@
 .canvas
 {
-  width: calc(100vw - 10px);
-  height: calc(100vh - 10px);
+  width: 100%;
   position: absolute;
   top: 0;
   left: 0;

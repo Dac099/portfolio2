@@ -9,12 +9,20 @@
 .cv_text
 {
   font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.cv_text span
+{
+  font-weight: bolder;
+  font-size: 2rem;
+  color: var(--violet);
 }
 
 .cv_image
 {
   display: block;
-  background-image: url('/public/cv.png');
+  background-image: url('/cv.png');
   background-repeat: no-repeat;
   background-size: contain;
   width: 128px;

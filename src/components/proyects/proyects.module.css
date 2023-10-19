@@ -22,4 +22,25 @@
   flex-wrap: wrap;
   gap: 10px;
   justify-content: center;
+  margin: 30px 0px;
+}
+
+.projects__carrucel
+{
+  display: flex;
+  gap: 10px;
+  margin: 60px 0px;
+  padding: 10px 20px;
+  overflow-x: auto;
+}
+
+.projects__carrucel::-webkit-scrollbar
+{
+  height: 8px;
+}
+
+.projects__carrucel::-webkit-scrollbar-thumb
+{
+  background-color: var(--green);
+  border-radius: 5px;
 }

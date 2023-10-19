@@ -5,7 +5,7 @@ export function CvSection(){
   return (
     <Card>
       <section className={styles.cv__container}>
-        <p className={styles.cv_text}>You can look at my CV</p>
+        <p className={styles.cv_text}>You can look at my <span>CV</span></p>
 
         <div className={styles.cv__image_container}>
           <a 

@@ -1,137 +1,25 @@
-.card
-{
-  height: 100%;
-  width: 25%;
-  flex: 1;
-  transition: flex-grow 0.5s ease;
-  border: 2px solid var(--white);
-  background-color: var(--black);
-  border-top-right-radius: 20px;
-  border-bottom-right-radius: 20px;
-  cursor: pointer;
-}
-
-.card_hidden
+.contact
 {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.card:hover
-{
-  flex-grow: 40;
-  background-color: var(--white);
-  border: 4px solid var(--green);
-}
-
-.hidden_title
-{
-  font-size: 40px;
-  color: var(--white);
-}
-
-.main_title
-{
-  padding: 10px;
-  font-size: 4rem;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-.main_title span
-{
-  color: var(--violet);
-  text-decoration: underline;
-  font-weight: bolder;
-  font-size: 4.2rem;
-}
-
-.content
-{
-  display: grid;
-  grid-template-rows: 220px 220px;
-  padding: 10px;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 20px;
 }
 
 .text
 {
-  font-size: 2.3rem;
+  font-size: 1.8rem;
+  padding-left: 20px;
+  margin-bottom: 30px;
+  margin-top: 15px;
+  font-weight: bold;
 }
 
-.contact ul
-{
-  list-style: none;
-  margin: 20px;
-}
-
-.contact ul li
-{
-  background-color: var(--black);
-  width: 100px;
-  padding: 8px;
-  margin-bottom: 5px;
-  border-radius: 5px;
-}
-
-.contact ul li:hover
+.text span
 {
   font-weight: bolder;
-  transform: scale(1.2);
-  transition: transform 0.3s;
-}
-
-.contact ul li a
-{
-  font-size: 1.8rem;
-  text-decoration: none;
-  color: var(--green);
-}
-
-
-.cv
-{
-  background-image: url('/public/cv.png');
-  width: 120px;
-  height: 120px;
-  display: block;
-  margin: 0 auto;
-  margin-top: 50px;
-  animation: bounce 1s linear infinite alternate;
-}
-
-@keyframes bounce {
-  0%{
-    transform: translateY(-40px);
-  }
-
-  100%{
-    transform: translateY(0px);
-  }
-}
-
-
-@media screen and (max-width: 760px){
-  .card
-  {
-    width: 100%;
-    height: 20%;
-    border-top-right-radius: 0px;
-    border-bottom-left-radius: 20px;
-  }
-
-  .main_title
-  {
-    font-size: 2.5rem;
-    text-align: center;
-  }
-  
-  .main_title span{
-    font-size: 2.7rem;
-  }
-
-  .text
-  {
-    font-size: 1.6rem;
-  }
+  color: var(--violet);
+  font-size: 2rem;
 }
