@@ -3,7 +3,6 @@ import { Card } from '../card/card';
 import { Label } from '../label/label';
 import github from '/github-icon.svg';
 import linkedin  from '/linkedin-icon.svg';
-import gmail from '/gmail-icon.svg';
 
 export function Contact(){
   return (
@@ -23,11 +22,6 @@ export function Contact(){
           text={'LinkedIn'}
         />
 
-        <Label
-          image={gmail}
-          link={null}
-          text={'Email'}
-        />
       </section>
     </Card>
   );
