@@ -1,20 +1,25 @@
-import { useRef, useEffect, useState } from 'react';
+import { useRef, useEffect } from 'react';
 import styles from './canvas.module.css';
 
 export const Canvas = () => {
   const canvasRef = useRef(null);
   const particles = [];
-  const [root, setRoot] = useState(document.getElementById('root'));
 
   useEffect(() => {
     const canvas = canvasRef.current;
     const ctx = canvas.getContext('2d');
-    setRoot(document.getElementById('root'));
 
     // Configurar la densidad de píxeles del canvas para pantallas de alta resolución
     const dpi = window.devicePixelRatio || 1;
     canvas.width = canvas.clientWidth * dpi;
-    canvas.height = root.clientHeight * dpi;
+    
+    const resizeObserver = new ResizeObserver((entries) => {
+      const entry = entries[0];
+      canvas.height = entry.contentRect.height * dpi;
+    });
+  
+    resizeObserver.observe(document.getElementById('root'));
+
     ctx.scale(dpi, dpi);
 
     let animationFrameId;
@@ -73,7 +78,10 @@ export const Canvas = () => {
     animate();
 
     // Limpiar el intervalo cuando el componente se desmonte
-    return () => cancelAnimationFrame(animationFrameId);
+    return () => {
+      cancelAnimationFrame(animationFrameId); 
+      resizeObserver.disconnect()
+    };
   }, []); // El array vacío garantiza que este efecto solo se ejecute una vez, equivalente a componentDidMount
 
   return <canvas ref={canvasRef} className={styles.canvas}/>;
