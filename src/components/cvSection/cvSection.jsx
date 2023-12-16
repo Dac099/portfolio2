@@ -9,7 +9,9 @@ export function CvSection(){
 
         <div className={styles.cv__image_container}>
           <a 
-            href="https://drive.google.com/file/d/1v6ka4eSpZ9odvTgXvzC78QbvhJXup0UX/view?usp=share_link"
+            href="https://drive.google.com/file/d/1Mth7YddbPh4hatFphT-luZ8MO3a5zBXz/view?usp=drive_link"
+            target='_blank'
+            rel='noreferrer'
             className={styles.cv_image}
           >  
           </a>

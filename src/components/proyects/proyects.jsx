@@ -15,6 +15,11 @@ import batatabit from '/batatabit.png';
 import cardComponent from '/card_component.png';
 import dateAndRate from '/date_and_rate.png';
 import jsonPlaceholder from '/json_placeholder.png';
+import balam from '/balam.png';
+import balamAdmin from '/balam_admin.png';
+import schedule from '/schedule.png';
+import algorithmics_admin from '/algorithmics_admin.png'
+import twilio_icon from '/twilio-icon.svg';
 import { Label } from '../label/label';
 import { ProjectCard } from '../projectCard/projectCard';
 
@@ -37,6 +42,39 @@ export function Proyects(){
             link={'https://dateandratelanding.netlify.app/'}
             source={'https://github.com/Dac099/date_landing'}
             image={dateAndRate}
+          />
+
+          <ProjectCard
+            title={'Algorithmics admin'}
+            description={'I create this panel for Algorithmics Metepec. You can manage teachers, sample classes, images of your landing page, days off and classes of each teacher.'}
+            link={null}
+            source={'https://github.com/Dac099/schedule_algortihmics.git'}
+            image={algorithmics_admin}
+          />
+          
+
+          <ProjectCard
+            title={'Schedule lessons'}
+            description={'I contributed to the project with the mockup, the algorithm to schedule classes and the integration of the Twilio API for sending notification by WhatsApp.'}
+            link={'https://clases-algorithmics.netlify.app/'}
+            source={null}
+            image={schedule}
+          />
+
+          <ProjectCard
+            title={'Balam Gourmet'}
+            description={'I created this website for the company Balam Gourmet, a sauces distributor. I was in charge of the design, layout and consumption of the products hosted in a database.'}
+            link={'https://balamgourmet.com/'}
+            source={'https://github.com/Dac099/balam_gourmet.git'}
+            image={balam}
+          />
+
+          <ProjectCard
+            title={'Balam Admin'}
+            description={'Create a site to be able to manage the elements that would appear on the Balam Gourmet website, elements such as images, and products.'}
+            link={null}
+            source={'https://github.com/Dac099/balam_administrator.git'}
+            image={balamAdmin}
           />
 
           <ProjectCard
@@ -79,6 +117,7 @@ export function Proyects(){
           <Label image={npmIcon} link={null} text={'NPM'}/>
           <Label image={psqlIcon} link={null} text={'PSQL'}/>
           <Label image={expressIcon} link={null} text={'Express'} invert={true}/>
+          <Label image={twilio_icon} link={null} text={'Twilio'}/>
         </section>
       </section>
     </Card>

@@ -12,13 +12,7 @@ export const Canvas = () => {
     // Configurar la densidad de píxeles del canvas para pantallas de alta resolución
     const dpi = window.devicePixelRatio || 1;
     canvas.width = canvas.clientWidth * dpi;
-    
-    const resizeObserver = new ResizeObserver((entries) => {
-      const entry = entries[0];
-      canvas.height = entry.contentRect.height * dpi;
-    });
-  
-    resizeObserver.observe(document.getElementById('root'));
+    canvas.height = canvas.clientHeight * dpi;
 
     ctx.scale(dpi, dpi);
 
@@ -80,7 +74,6 @@ export const Canvas = () => {
     // Limpiar el intervalo cuando el componente se desmonte
     return () => {
       cancelAnimationFrame(animationFrameId); 
-      resizeObserver.disconnect()
     };
   }, []); // El array vacío garantiza que este efecto solo se ejecute una vez, equivalente a componentDidMount
 

@@ -2,7 +2,7 @@
 {
   --black: #16161a;
   --violet: #7f5af0;
-  --white: #e4e4e3;
+  --white: #f3f1f5;
   --gray: #94a1b2;
   --green:#2cb67d;
 }
@@ -23,6 +23,8 @@ html
 body
 {
   background-color: var(--black);
+  width: 100%;
+  height: 100vh;
 }
 
 #root

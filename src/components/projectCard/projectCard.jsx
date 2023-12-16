@@ -16,17 +16,17 @@ export function ProjectCard({title, description, source, link, image}){
 
         <div className={styles.buttons}>
           <a 
-            className={styles.btn}
+            className={link ? styles.btn : styles.unavailable_btn}
             href={link}
             target='_blank'
             rel='noreferrer'
           >
-            Link to
+            {link ? 'Link' : 'Unavailable'}
           </a>
 
           <a 
             className={source ? styles.btn : styles.unavailable_btn}
-            href={source || '#'}
+            href={source}
             target='_blank'
             rel='noreferrer'
           >
