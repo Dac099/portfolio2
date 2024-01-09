@@ -1,6 +1,12 @@
 import styles from './project.module.css';
+import { useContext } from 'react';
+import { LanguageContext } from '../../context/languajeContext';
 
 export function ProjectCard({title, description, source, link, image}){
+  const { lang } = useContext(LanguageContext);
+  const unavailable = lang === 'en' ? 'Unavailable' : 'Inaccesible';
+  const sourCode = lang === 'en' ? 'Source Code' : 'Código';
+
   return (
     <article className={styles.project}>
       <p className={styles.project__title}>{title}</p>
@@ -21,7 +27,7 @@ export function ProjectCard({title, description, source, link, image}){
             target='_blank'
             rel='noreferrer'
           >
-            {link ? 'Link' : 'Unavailable'}
+            {link ? 'Link' : unavailable}
           </a>
 
           <a 
@@ -30,7 +36,7 @@ export function ProjectCard({title, description, source, link, image}){
             target='_blank'
             rel='noreferrer'
           >
-            {source ? 'Source code' : 'Unavailable'}
+            {source ? sourCode : unavailable}
           </a>       
         </div>
       </section>
