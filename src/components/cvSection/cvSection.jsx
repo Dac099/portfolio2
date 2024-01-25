@@ -7,7 +7,7 @@ export function CvSection(){
   const { lang } = useContext(LanguageContext);
   const cvURL = lang === 'en' 
     ? 'https://drive.google.com/file/d/1JMb6GLeXphvoEaxO56ZNbXaRZY4PqSuW/view?usp=drive_link'
-    : 'https://drive.google.com/file/d/1Mth7YddbPh4hatFphT-luZ8MO3a5zBXz/view?usp=drive_link'
+    : 'https://drive.google.com/file/d/1xNKqfth24JPHRcl9OWMBpsepGuVshbbj/view?usp=sharing'
 
   return (
     <Card>
